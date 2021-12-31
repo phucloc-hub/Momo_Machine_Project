@@ -33,7 +33,6 @@ public class MachineImplTest {
         CheckoutResult checkoutResult = machine.checkout();
         Assert.assertEquals(1,checkoutResult.getQuantity());
         Assert.assertEquals(0,checkoutResult.getChange());
-
     }
 
     @Test
@@ -69,8 +68,6 @@ public class MachineImplTest {
         Assert.assertEquals(10000,checkoutResult.getChange());
     }
 
-
-
     @Test
     public void testCheckout5(){
         Machine machine = new MachineImpl(productMap,new NoPromotion());
@@ -84,7 +81,6 @@ public class MachineImplTest {
         CheckoutResult checkoutResult2 = machine.checkout();
         Assert.assertEquals(0,checkoutResult2.getQuantity());
         Assert.assertEquals(0,checkoutResult2.getChange());
-
     }
 
     @Test
@@ -123,5 +119,4 @@ public class MachineImplTest {
         Assert.assertEquals(0,checkoutResult.getQuantity());
         Assert.assertEquals(0,checkoutResult.getChange());
     }
-
 }

@@ -19,6 +19,11 @@ public class MachineImpl implements Machine {
     }
 
     @Override
+    public int getBalance() {
+        return totalAmount;
+    }
+
+    @Override
     public void setProduct(int id) {
         productId = id;
     }
@@ -44,9 +49,5 @@ public class MachineImpl implements Machine {
         int rs = totalAmount;
         totalAmount = 0;
         return rs;
-    }
-
-    public int getTotalAmount() {
-        return totalAmount;
     }
 }

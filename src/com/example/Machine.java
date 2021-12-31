@@ -4,6 +4,8 @@ public interface Machine {
 
     void deposit(int amount);
 
+    int getBalance();
+
     void setProduct(int id);
 
     CheckoutResult checkout();

@@ -1,8 +1,6 @@
 package com.example;
 
 public class CheckoutResult {
-
-
     private final int quantity;
     private final int change;
 
@@ -10,7 +8,6 @@ public class CheckoutResult {
         this.quantity = quantity;
         this.change = change;
     }
-
 
     public int getChange() {
         return change;

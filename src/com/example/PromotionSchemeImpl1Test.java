@@ -17,7 +17,6 @@ public class PromotionSchemeImpl1Test {
         productMap.put(3,new Product(3,"Soda",20000));
     }
 
-
     @Test
     public void test1(){
     PromotionScheme promotionScheme = new PromotionSchemeImpl1(productMap,50000,1D);
@@ -33,8 +32,6 @@ public class PromotionSchemeImpl1Test {
         Assert.assertFalse(promotionScheme.apply(1));
         Assert.assertTrue(promotionScheme.apply(1));
     }
-
-
 
     @Test
     public void testBudget1(){
@@ -74,7 +71,6 @@ public class PromotionSchemeImpl1Test {
         Assert.assertFalse(promotionScheme.apply(1));
         Assert.assertFalse(promotionScheme.apply(1));
         Assert.assertFalse(promotionScheme.apply(1));
-
     }
 
     @Test
@@ -89,6 +85,5 @@ public class PromotionSchemeImpl1Test {
         Assert.assertFalse(promotionScheme.apply(2));
         Assert.assertFalse(promotionScheme.apply(2));
         Assert.assertTrue(promotionScheme.apply(2));
-
     }
 }
